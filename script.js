@@ -108,7 +108,7 @@ function displayRGB(rgb) {
 function displayHSL(hsl) {
   
    //Displays HSL by inseting it into the #hex with textContent
-  const displayHSLCode = `HSL: ${hsl.h}, ${hsl.s}%, ${hsl.s}%`;
+  const displayHSLCode = `HSL: ${hsl.h}, ${hsl.s}, ${hsl.s}`;
   document.querySelector("#hsl").textContent = displayHSLCode;
 }
 
