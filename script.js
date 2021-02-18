@@ -11,6 +11,7 @@ function delegator() {
   const input = document.querySelector("input");
   const hex = getInput(input.value);
   displayHEX(hex);
+  randomBackground(hex);
 
   //Defines rgb("waits" for return value), then calls displayRGB
   const rgb = hexToRGB(hex);
@@ -87,10 +88,13 @@ function rgbToHSL(rgb) {
 }
 
 
-function displayHEX(hex) {
-  //Makes the box the same color/value, as chosen by the user
-  document.querySelector("#color").style.backgroundColor = `${hex}`;
+function randomBackground(hex){
+    //Makes the box the same color/value, as chosen by the user
+    document.querySelector("#color").style.backgroundColor = `${hex}`;
+}
 
+
+function displayHEX(hex) {
   //Displays HEX by inseting it into the #hex with textContent
   const displayHEXCode = "HEX: " + hex;
   document.querySelector("#hex").textContent = displayHEXCode;
