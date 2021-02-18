@@ -90,7 +90,7 @@ function rgbToHSL(rgb) {
 
 function randomBackground(hex){
     //Makes the box the same color/value, as chosen by the user
-    document.querySelector("#color").style.backgroundColor = `${hex}`;
+    document.querySelector("body").style.backgroundColor = `${hex}`;
 }
 
 
